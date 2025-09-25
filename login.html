@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #ffffff;
+    }
+    .login-container {
+      width: 400px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 5px;
+    }
+    .signup-link {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    form {
+      text-align: left;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+    .form-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #333;
+    }
+    a {
+      font-size: 14px;
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <p class="signup-link">Don’t have an account? <a href="register.html">Sign up here.</a></p>
+
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+
+      <div class="form-footer">
+        <button type="submit">SIGN IN</button>
+        
+      </div>
+    </form>
+  </div>
+</body>
+</html>
