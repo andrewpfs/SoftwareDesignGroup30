@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: flex;   
+  background: grey;
+}
+h1{
+    margin-top : -3px;
+    margin-bottom: 6px;
+    padding-left: -5px;
+}
+.container{
+  max-width: 720px;
+  width: 100%;
+  padding: 1.5rem;
+}
+.required{
+    color: red;
+}
+form{
+  background:#fff;
+  padding:1.5rem;
+  border-radius:8px;
+  box-sizing:border-box;
+}
+
+.field{ 
+    margin-top: 4px;
+    margin-bottom:16px; 
+}
+label{ 
+    display:block; 
+    font-weight:700; 
+    margin-bottom:4px; 
+}
+
+
+input, select, textarea{
+  width:100%;
+  padding:.5rem;
+}
+
+.row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1rem;
+}
+.row .field{ margin-bottom:0; }
+
+textarea{ height:90px; }
