@@ -57,11 +57,10 @@ input::placeholder {
 
 button {
   padding: 10px 16px;
-  background: #000;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 4px;
-  font-weight: bold;
   cursor: pointer;
 }
 
