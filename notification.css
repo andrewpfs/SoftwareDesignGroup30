@@ -1,0 +1,28 @@
+body {
+
+      font-family: sans-serif;
+      background: grey;
+      margin: 0;
+      padding: 40px;
+    }
+    .notifications-container{
+      max-width: 1000px;
+      margin: 0 auto;
+      background: lightblue;
+      border-radius: 10px;
+      border: 2px solid black;
+      padding: 20px;
+    }
+    .notifications h2 {
+      margin-top: 0;
+      font-size: 20px;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+    }
+    .note {
+      padding: 12px 14px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border-left: 5px solid black;
+      background: white;
+    }
