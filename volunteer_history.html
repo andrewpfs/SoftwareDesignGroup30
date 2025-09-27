@@ -14,9 +14,7 @@
         </div>
         <div>
             <p style = "
-                margin-left: 150px;
-                margin-right: 150px;
-                font-size: 28px;
+                font-size: 36px;
                 font-weight: bold;
                 text-decoration: underline;
             "> <!-- The title of the page. Unsurprisingly, shows where the user is. -->
@@ -25,9 +23,9 @@
         </div>
         <!-- A box for an event. -->
         <div style = "
-            border: 1px solid black;
-            font-weight: bold;
-            margin: 150px;
+            border-radius: 5px;
+            border: 1px solid aquamarine;
+            background-color: rgb(225, 255, 245);
             margin-top: 0;
             margin-bottom: 30px;
         ">
@@ -36,49 +34,60 @@
 	            display: flex;
             "> <!-- A row depicting event name and urgency. Urgency should be in bold. -->
 	            <div style = "
-                    background-color: lightblue;
+                    background-color: aquamarine;
                     flex: 3;
                     padding: 15px;
+                    font-weight: bold;
+                    border-top-left-radius: 5px;
                 ">
                     EVENT NAME
                 </div>
 	            <div style = "
-                    background-color: lightpink;
+                    background-color: aquamarine;
                     flex: 2;
                     padding: 15px;
+                    font-weight: bold;
+                    border-top-right-radius: 5px;
                 ">
                     URGENCY
                 </div>
             </div>
-            <div style = "
-                padding: 15px;
-            "> <!-- Holds the location, date, description, and required skills of the event. -->
+            <div> <!-- Holds the location, date, description, and required skills of the event. -->
                 <!-- Should display with location on the left and a date and time on the right. -->
-                <p style = "
-                    margin-bottom: 10px;
-                    margin-top: 10px;
-                ">
+                <p class = "text1">
                     LOCATION
                 </p>
-                <p style = "
-                    margin-bottom: 10px;
-                    margin-top: 10px;
-                ">
-                    DATE
+                <p class = "text1">
+                    MM/DD/20YY
                 </p>
                 <div style = "
-	                display: grid;
-	                grid-template-columns: 3fr 2fr;
+	                display: flex;
                 ">
                     <!-- Description goes here. -->
-	                <div style = "background-color: lightblue;">DESCRIPTION</div>
+	                <div style = "
+                        padding: 15px;
+                        flex: 3;
+                        border-bottom-left-radius: 5px;
+                    ">
+                        DESCRIPTION GOES HERE
+                    </div>
                     <!-- Required Skills go here. They should be depicted as a list. -->
-	                <div style = "background-color: lightpink;">Required Skills:<p>text</p></div>
+	                <div style = "
+                        padding: 15px;
+                        flex: 2;
+                        border-bottom-right-radius: 5px;
+                    ">
+                        Required Skills:<p>text</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <p>
+        <div> <!-- This will only show if the volunteer has no volunteering history.
+                It is only there for demonstration purposes. -->
+            <p style = "
+                text-align: center;
+                font-size: larger;
+            ">
                 You haven't volunteered at any COMPANY NAME events yet.
             </p>
         </div>
