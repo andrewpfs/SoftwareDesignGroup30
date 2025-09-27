@@ -13,7 +13,13 @@
             INSERT HEADER HERE
         </div>
         <div>
-            <p> <!-- The title of the page. Unsurprisingly, shows where the user is. -->
+            <p style = "
+                margin-left: 150px;
+                margin-right: 150px;
+                font-size: 28px;
+                font-weight: bold;
+                text-decoration: underline;
+            "> <!-- The title of the page. Unsurprisingly, shows where the user is. -->
                 Volunteer History
             </p>
         </div>
@@ -23,24 +29,44 @@
             font-weight: bold;
             margin: 150px;
             margin-top: 0;
+            margin-bottom: 30px;
         ">
             <!-- Add image here. -->
             <div style = "
 	            display: flex;
             "> <!-- A row depicting event name and urgency. Urgency should be in bold. -->
-	            <div style = "background-color: lightblue; flex: 3;">NAME</div>
-	            <div style = "background-color: lightpink; flex: 2;">URGENCY<p>text</p></div>
+	            <div style = "
+                    background-color: lightblue;
+                    flex: 3;
+                    padding: 15px;
+                ">
+                    EVENT NAME
+                </div>
+	            <div style = "
+                    background-color: lightpink;
+                    flex: 2;
+                    padding: 15px;
+                ">
+                    URGENCY
+                </div>
             </div>
-            <div> <!-- Holds the location, date, description, and required skills of the event. -->
+            <div style = "
+                padding: 15px;
+            "> <!-- Holds the location, date, description, and required skills of the event. -->
                 <!-- Should display with location on the left and a date and time on the right. -->
-                <p>
+                <p style = "
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                ">
                     LOCATION
                 </p>
-                <p>
+                <p style = "
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                ">
                     DATE
                 </p>
                 <div style = "
-	                margin-top: 30px;
 	                display: grid;
 	                grid-template-columns: 3fr 2fr;
                 ">
