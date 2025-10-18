@@ -6,13 +6,13 @@
   <title>Create Event</title>
 
   <link rel="stylesheet" href="event_management.css" />
-
+  
 </head>
 <body>
   <div>
     <h1>Create Event</h1>
-    <form id="eventForm">
-
+      <form id="eventForm" action="/create-event" method="POST">
+        
       <label for="eventName">Event Name</label><br>
       <input type="text" id="eventName" name="eventName" maxlength="100" required><br>
 

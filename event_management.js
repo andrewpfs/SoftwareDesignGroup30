@@ -1,4 +1,3 @@
-
 function toggleSkillsDropdown() {
   document.getElementById("skillsDropdown").classList.toggle("show");
 }
@@ -11,6 +10,7 @@ document.getElementById("skillsBtn").addEventListener("click", function(e) {
   e.stopPropagation();
   toggleSkillsDropdown();
 });
+
 document.getElementById("urgencyBtn").addEventListener("click", function(e) {
   e.stopPropagation();
   toggleUrgencyDropdown();
@@ -39,7 +39,8 @@ window.addEventListener("click", function(event) {
   }
 });
 
-document.getElementById("eventForm").addEventListener("submit", function(e) {
+document.getElementById("eventForm").addEventListener("submit", async function(e) {
+  e.preventDefault(); 
   let ok = true;
 
   const skillChecks = document.querySelectorAll("input[name='requiredSkills']:checked");
@@ -58,7 +59,29 @@ document.getElementById("eventForm").addEventListener("submit", function(e) {
     document.getElementById("urgencyError").style.display = "none";
   }
 
-  if (!ok) {
-    e.preventDefault();
+  if (!ok) return;
+
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData.entries());
+
+  try {
+    const res = await fetch("/create-event", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (res.ok) {
+      alert(result.message);
+      this.reset();
+      document.getElementById("urgencyBtn").textContent = "Select Urgency ▼";
+    } else {
+      alert("Error:\n" + result.errors.join("\n"));
+    }
+  } catch (err) {
+    alert("Server error. Please try again later.");
+    console.error(err);
   }
 });
