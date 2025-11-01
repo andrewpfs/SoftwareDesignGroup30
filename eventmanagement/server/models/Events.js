@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     requiredSkills: {
-      type: DataTypes.JSON, // or STRING if you prefer comma-separated values
+      type: DataTypes.JSON, 
       allowNull: false,
     },
     urgency: {
@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     eventDate: {
-      type: DataTypes.DATEONLY, // only the date, no time
+      type: DataTypes.DATEONLY, 
       allowNull: false,
     },
     startTime: {

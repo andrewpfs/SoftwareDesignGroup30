@@ -39,7 +39,7 @@ function App() {
     };
 
     try {
-      const res = await fetch('http://localhost:3000/create-event', {
+      const res = await fetch('http://localhost:3001/create-event', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -49,7 +49,6 @@ function App() {
 
       if (res.ok) {
         alert(result.message || 'Event created successfully!');
-        // Reset form
         setEventName('');
         setEventDescription('');
         setEventLocation('');
