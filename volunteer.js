@@ -1,19 +1,21 @@
 /**
  * Note: This script will be shared between both volunteer_history and volunteer_matching_form.
+ * As of 11/17/25 at 4:51 PM, this is still a work-in-progress. NodeJS and React have yet to be implemented.
  */
 
 /**
  * Constructor: Create volunteering event object
  * An event object will include its name, urgency, location, date, description, and required skills.
- * For Assignment 3, the attendance list will be a boolean. In the final project, the list will be an array.
+ * For Assignment 3, the attendance list will be a boolean. In the final project, the list will be an array of volunteer IDs.
  */
-function VolEvent(name, urgency, location, date, desc, skills) {
+function VolEvent(name, urgency, location, date, desc, skills, attendees) {
     this.name = name;
     this.urgency = new Int(urgency); // 0 = Low, 1 = Medium, 2 = High
     this.location = location;
     this.date = new Date(date);
     this.desc = desc;
     this.skills = new Array(skills);
+    this.attendees = new Boolean(attendees);
 }
 
 /**
@@ -39,8 +41,8 @@ function getHistory(volevents){
     this.volevents = new Array(volevents);
     if (this.volevents.length() === 0) return 0;
     else
-        this.volevents.forEach(function() {
-            
+        this.volevents.forEach(function(x) {
+            if (x.attendees) then (console.log('ATTENDED ${x.name}'));
         });
 }
 
@@ -54,7 +56,7 @@ function getMatches(volprofile){
     this.profile = new Array(volprofile);
     if (this.volprofile.length() === 0) return 0;
     else
-        this.volprofile.forEach(function() {
+        this.volprofile.forEach(function(x) {
             
         });
 }
@@ -63,16 +65,16 @@ function getMatches(volprofile){
  * Below are some hard-coded events for Assignment 3.
  */
 const event1 = new VolEvent('Little League Baseball Game', 1, 'Houston, TX', '2025-10-17',
-    'At 6:00 PM on October 17th, we will host a Little Leagua baseball game for the Houston area.',
-    [1, 4, 5]);
+    'At 6:00 PM on October 17th, we will host a Little League baseball game for the Houston area.',
+    [1, 4, 5], true);
 const event2 = new VolEvent('Fun Run', 2, 'Houston, TX', '2025-10-18',
     'At 2:00 PM on October 18th, we will host a fun run for the Houston area for elementary school students.',
-    [3, 2, 7]);
+    [3, 2, 7], false);
 const event3 = new VolEvent('Little League Baseball Game', 1, 'Houston, TX', '2025-10-17',
     'At 6:00 PM on October 17th, we will host a Little Leagua baseball game for the Houston area.',
-    [1, 4, 5]);
+    [1, 4, 5], true);
 
 /**
- * Below are some hard-coded events for Assignment 3.
+ * Below is a hard-coded volunteer for Assignment 3.
  */
 const Mii = new Volunteer('Jason', 'Adams', [1, 4]);
