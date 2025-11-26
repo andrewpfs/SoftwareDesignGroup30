@@ -1,23 +1,15 @@
 body{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0 200px;
     font-family: Arial, sans-serif;
 }
 
 .header{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 20px;
     text-align: center;
     background-color: aquamarine;
     border: 2px solid;
     border-color: black;
-    border-radius: 5px;
-    margin-left: -205px;
-    margin-right: -205px;
-    margin-top: -10px;
-    margin-bottom: 30px;
+    margin: -2px -205px 30px;
 }
 
 .vlntr{
@@ -41,12 +33,19 @@ body{
     background-color: rgb(85, 85, 85);
 }
 .vlnbutton:active{
-    border: solid antiquewhite;
+    border: solid rgb(225, 255, 245);
 }
 
 .text1{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 10px 15px;
+}
+
+.popup{
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.popup-within{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
