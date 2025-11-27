@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>
+            ADMIN - Volunteer Matching
+        </title>
+        <link rel = "stylesheet" href = "./volunteer.css">
+        <meta charset = "UTF-8">
+        <script src = "volunteer_matching_form.jsx"></script>
+    </head>
+
+	<body>
+        <!-- A placeholder header. -->
+        <header class = "header">
+            INSERT HEADER HERE
+        </header>
+
+        <tr>
+            <th>
+                <span style = "
+                    font-size: 36px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    margin-bottom: 10px;
+                "> <!-- The title of the page. Unsurprisingly, shows where the user is. -->
+                    Volunteer Matching
+                </span>
+            </th>
+            <th>
+                <button class = "vlnbutton" style = "
+                    text-align: end;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    margin-left: 20px;
+                ">
+                    REFRESH
+                </button>
+            </th>
+        </tr>
+
+        <div style = "
+            border: 1px solid aquamarine;
+            background-color: aquamarine;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 0;
+        ">
+            <div>
+                <!-- Event box. Holds automatically matched volunteers based on dates. -->
+                <div style = "
+                    padding: 15px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    font-size: 30px;
+                ">
+                    <p> <!-- The name and location of the event. -->
+                        EVENT NAME - LOCATION
+                    </p>
+                    
+                </div>
+                <div>
+                    <div class = "vlntr"> <!-- Volunteer box. -->
+                        <!-- Volunteer name. -->
+                        <p style = "
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        ">
+                            NAME
+                        </p>
+                        <!-- Skills for the volunteer go here.
+                        A counter indicating the number of skills that led to the match also goes here.
+                        Should it be a drop-down list? -->
+                        <p style = "
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        ">
+                            Skills (X out of Y): SKILL 1, SKILL 2, SKILL 3...
+                        </p>
+                        <p style = "
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        ">
+                            Available ADD DATES HERE
+                        </p>
+                        <div style = "
+                            text-align: right;
+                        ">
+                            <button class = "vlnbutton">
+                                Match
+                            </button>
+                            <button class = "vlnbutton">
+                                Reject
+                            </button>
+                            <button class = "vlnbutton">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>                    
+                </div>
+                <div>
+                    <div class = "vlntr"> <!-- Volunteer box. -->
+                        <!-- Volunteer name. -->
+                        <p style = "
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        ">
+                            NAME
+                        </p>
+                        <!-- Skills for the volunteer go here.
+                        A counter indicating the number of skills that led to the match also goes here.
+                        Should it be a drop-down list? -->
+                        <p style = "
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        ">
+                            Skills (X out of Y): SKILL 1, SKILL 2, SKILL 3...
+                        </p>
+                        <p style = "
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        ">
+                            Available ADD DATES HERE
+                        </p>
+                        <div style = "
+                            text-align: right;
+                        ">
+                            <button class = "vlnbutton">
+                                Match
+                            </button>
+                            <button class = "vlnbutton">
+                                Reject
+                            </button>
+                            <button class = "vlnbutton">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
